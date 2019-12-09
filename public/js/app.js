@@ -2018,6 +2018,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     this.getUserData();
@@ -2029,6 +2032,12 @@ __webpack_require__.r(__webpack_exports__);
       axios.get('api/users').then(function (response) {
         // console.log(response.data;);
         _this.users = response.data;
+      });
+      axios.get('show').then(function (response) {
+        // console.log(response.data;);
+        //name:this.name,
+        //city:this.city
+        users: _this.users;
       });
     },
     deleteUser: function deleteUser(id, index) {
@@ -49960,7 +49969,21 @@ Vue.component('edit', __webpack_require__(/*! ./components/Edit.vue */ "./resour
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    like1: false,
+    like2: false,
+    like3: false,
+    like4: false,
+    like5: false,
+    like6: false,
+    like7: false,
+    like8: false,
+    like9: false,
+    like10: false,
+    like11: false,
+    like12: false
+  }
 });
 
 /***/ }),

@@ -25,19 +25,35 @@
     </table>
     <a href="/users/create" class="btn btn-primary">เพิ่มข้อมูล</a>
 </div>
+
+
+
 </template>
 
 <script>
 export default {
     mounted() {
         this.getUserData();
+
     },
     methods: {
         getUserData() {
             axios.get('api/users').then(response => {
                 // console.log(response.data;);
                 this.users = response.data;
+
             });
+
+
+            axios.get('show').then(response => {
+                // console.log(response.data;);
+                //name:this.name,
+                //city:this.city
+                users:this.users
+
+            });
+
+
 
         },
         deleteUser(id,index){

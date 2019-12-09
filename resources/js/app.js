@@ -32,4 +32,22 @@ Vue.component('edit', require('./components/Edit.vue').default);
 
 const app = new Vue({
     el: '#app',
+    data: {
+      like1:false,
+      like2:false,
+      like3:false,
+      like4:false,
+      like5:false,
+      like6:false,
+      like7:false,
+      like8:false,
+      like9:false,
+      like10:false,
+      like11:false,
+      like12:false,
+
+
+
+
+  }
 });
